@@ -5,7 +5,7 @@ public class Main {
         Scanner scan = new Scanner(System.in);
         boolean checker = false;
         while(!checker){
-            System.out.print("Для початку гри введіть /start: ");
+            System.out.print("Type /start to start game: ");
             String s = scan.nextLine();
             if(s.equals("/start")){
                 checker = true;
@@ -21,7 +21,7 @@ public class Main {
         boolean flag = true;
         while(flag) {
             Game.game();
-            System.out.println("Напишіть /restart для рестарту гри, щоб закрити натисніть ENTER");
+            System.out.println("Type /restart to restart game or ENTER to close");
             String s = scan.nextLine();
             if(s.equals("/restart")) {
                 flag = true;

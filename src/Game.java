@@ -9,7 +9,7 @@ public class Game {
         while (!checker2) {
             GameEngine.vivodPolya(arrForGame);
             if (i % 2 != 0) {
-                System.out.print("Введіть кординату (наприклад, A2): ");
+                System.out.print("Type coordinate(for example, A2): ");
                 String input = scan.nextLine();
                 if (input.length() == 2) {
                     char x = input.charAt(0);
@@ -19,7 +19,7 @@ public class Game {
                     checker2 = GameEngine.proverkaUsloviya(arrForGame, "X");
                     if (checker2) break;
                 } else {
-                    System.out.println("Неправильний формат.");
+                    System.out.println("Wrong format.");
                 }
             } else {
                 GameEngine.makeRandomMove(arrForGame, "O");
